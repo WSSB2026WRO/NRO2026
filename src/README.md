@@ -1,4 +1,4 @@
-# R2M Robot – WRO 2026
+# R2M Robot – WRO 2026 
 
 This repository contains all code and artifacts developed by the R2M team for the WRO 2026 Open and Obstacle Challenges. It includes control software, sensor integration, vision modules, and supporting files for building, running, and reproducing the vehicle.
 
