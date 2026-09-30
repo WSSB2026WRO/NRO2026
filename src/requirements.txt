@@ -1,7 +1,7 @@
 gpiozero==1.7.2
 adafruit-circuitpython-servokit==1.1.1
 adafruit-circuitpython-vl53l0x==1.2.8
-HUSKYLENS==0.1.0
+PI camera
 board
 busio
 time
