@@ -56,7 +56,7 @@
 
 ---
 
-## HuskyLens Camera (Obstacle Detection)
+## Pi camera Camera (Obstacle Detection)
 - I2C interface
   - SDA -> Raspberry Pi SDA (GPIO2)
   - SCL -> Raspberry Pi SCL (GPIO3)
@@ -85,6 +85,6 @@
 - Raspberry Pi controls the entire system via GPIO and I2C
 - L298N drives the DC motors
 - PCA9685 controls the steering servo
-- VL53L0X and HC-SR04 provide distance sensing for navigation
-- HuskyLens detects colored obstacles for avoidance
+- ultrasonic and HC-SR04 provide distance sensing for navigation
+- Pi camera detects colored obstacles for avoidance
 - Start/Stop button controls the running state of the program
