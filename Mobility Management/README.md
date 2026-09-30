@@ -19,9 +19,8 @@ The R2M robot is designed for autonomous navigation and obstacle handling in the
 - **Mounting of Components:** 
   - The DC motor is attached to the chassis with a bracket that ensures proper alignment of the drive wheel.
   - The steering servo is centrally mounted to control the front wheel or steering linkage.
-  - **VL53L0X sensors:** Two side sensors are mounted for lateral distance measurement, and one rear sensor is mounted for parking detection and alignment.
   - **HC-SR04 sensor:** Front ultrasonic sensor is mounted for start/finish detection and front obstacle distance.
-  - The HuskyLens camera is mounted to allow clear detection of colored obstacles.
+  - The HuskyLens camera is mounted to allow clear detection of colored obstacles. Two side sensors are mounted for lateral distance measurement, and one rear sensor is mounted for parking detection and alignment.
 - **3D Printed Parts:** Custom mounts and holders for sensors, servo, and motor are designed in CAD software and 3D printed for precise fitting. CAD files are included in this directory for replication.
 
 ### Engineering Principles
