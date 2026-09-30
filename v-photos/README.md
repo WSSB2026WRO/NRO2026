@@ -1,8 +1,8 @@
-# R2M Robot – WRO 2025
+# R2M Robot – WRO 2026
 
 ## Project Overview
 
-R2M is an autonomous robot designed by the team members Rashid, Mohammed, and Mansoor for the WRO 2025 Open and Obstacle Challenges. It is capable of navigating a predefined track, avoiding obstacles, performing precise cornering, completing laps, and parking autonomously in a designated magenta lot.
+R2M is an autonomous robot designed by the team members Rashid, Mohammed, and Mansoor for the WRO 2026 Open and Obstacle Challenges. It is capable of navigating a predefined track, avoiding obstacles, performing precise cornering, completing laps, and parking autonomously in a designated magenta lot.
 
 The robot combines multiple sensors, actuators, and AI-powered vision to make decisions in real-time, ensuring both accuracy and safety during the competition.
 
