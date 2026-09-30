@@ -20,22 +20,22 @@ The R2M robot is designed for autonomous navigation and obstacle handling in the
   - The DC motor is attached to the chassis with a bracket that ensures proper alignment of the drive wheel.
   - The steering servo is centrally mounted to control the front wheel or steering linkage.
   - **HC-SR04 sensor:** Front ultrasonic sensor is mounted for start/finish detection and front obstacle distance.
-  - The HuskyLens camera is mounted to allow clear detection of colored obstacles. Two side sensors are mounted for lateral distance measurement, and one rear sensor is mounted for parking detection and alignment.
+  - The Pi camera camera is mounted to allow clear detection of colored obstacles. Two side sensors are mounted for lateral distance measurement, and one rear sensor is mounted for parking detection and alignment.
 - **3D Printed Parts:** Custom mounts and holders for sensors, servo, and motor are designed in CAD software and 3D printed for precise fitting. CAD files are included in this directory for replication.
 
 ### Engineering Principles
 - **Speed and Power:** The vehicle balances maximum speed with safe navigation. Acceleration and deceleration are controlled to prevent slippage or overshoot in corners.
 - **Torque:** The single motor is sufficient to overcome friction and carry the full weight of the vehicle while maintaining precise control.
 - **Energy Efficiency:** Battery selection and motor efficiency allow uninterrupted operation throughout all three laps of the challenge.
-- **Control Algorithms:** The robot uses proportional control for lateral alignment, corner detection for precise turns, obstacle avoidance through the HuskyLens camera, and rear distance sensing for parking maneuvers.
+- **Control Algorithms:** The robot uses proportional control for lateral alignment, corner detection for precise turns, obstacle avoidance through the Pi camera camera, and rear distance sensing for parking maneuvers.
 
 ### Assembly Instructions
 1. Mount the DC motor to the chassis using the provided bracket.
 2. Attach the steering servo and connect it to the steering linkage.
 3. Secure the Raspberry Pi and motor driver board onto the chassis with spacers or 3D-printed holders.
-4. Mount the VL53L0X sensors: two at the sides for lateral detection, one at the rear for parking alignment.
+4. Mount the Ultrasound sensors: two at the sides for lateral detection, one at the rear for parking alignment.
 5. Attach the HC-SR04 sensor at the front.
-6. Attach the HuskyLens camera at a height allowing unobstructed detection.
+6. Attach the Pi camera camera at a height allowing unobstructed detection.
 7. Connect all wiring according to the provided schematic, ensuring a common ground.
 8. Place the battery securely and connect it to the motor driver and Raspberry Pi power inputs.
 9. Test the motor, servo, and sensor readings manually before running the autonomous code.
