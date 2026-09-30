@@ -1,15 +1,15 @@
-# R2M Autonomous Robot – WRO 2025
+# R2M Autonomous Robot – WRO 2026
 
 ## Team Members
-- Rashid
+- Faysal
 - Mohammed
-- Mansoor
+- Omar
 
 ## Robot Name
 **R2M** – derived from the first letters of the team members’ names.
 
 ## Project Overview
-R2M is an autonomous mobile robot designed to participate in the World Robot Olympiad 2025. The robot is programmed to perform two main challenges: the **Open Challenge** and the **Obstacle Challenge**. It combines sensor fusion, precise motor control, and intelligent decision-making to navigate, detect obstacles, and complete laps with accuracy.
+R2M is an autonomous mobile robot designed to participate in the World Robot Olympiad 2026. The robot is programmed to perform two main challenges: the **Open Challenge** and the **Obstacle Challenge**. It combines sensor fusion, precise motor control, and intelligent decision-making to navigate, detect obstacles, and complete laps with accuracy.
 
 The robot’s primary objectives include:
 1. Completing multiple laps along a pre-defined course autonomously.
