@@ -29,7 +29,7 @@ The R2M robot is powered by a **lithium-ion rechargeable battery pack**, providi
 The vehicle is equipped with a combination of **distance sensors and camera vision** to navigate the challenges autonomously. Each sensor was selected based on its accuracy, update rate, and suitability for the specific task.  
 
 ### Side and Rear Distance Sensors
-- **VL53L0X ToF Sensors (Side & Rear):**  
+- **ultrasonic ToF Sensors (Side & Rear):**  
   - Two sensors on the sides detect the vehicle’s lateral distance from walls or table borders for centering.  
   - One rear sensor aids in parking maneuvers and ensures the robot aligns correctly in the designated magenta parking lot after completing the laps.  
   - **Reason for Selection:** Compact, precise, fast response (~30ms), and capable of measuring up to 2 meters.  
@@ -40,17 +40,17 @@ The vehicle is equipped with a combination of **distance sensors and camera visi
   - **Reason for Selection:** Cost-effective, reliable for detecting a flat reference surface, simple interface with Raspberry Pi.  
 
 ### Vision Sensor
-- **HuskyLens Camera:**  
+- **Pi camera Camera:**  
   - Detects colored obstacles (red and green) to implement the obstacle avoidance logic.  
   - Allows dynamic steering adjustments based on object detection.  
   - **Reason for Selection:** Provides color recognition without requiring heavy processing on the Raspberry Pi.  
 
 ### Sensor Integration
 - The Pi reads all sensors and combines the data to determine:
-  - Lateral correction for centering (side VL53L0X)  
-  - Corner detection and lap counting (side VL53L0X)  
-  - Obstacle avoidance (HuskyLens)  
-  - Parking detection (rear VL53L0X)  
+  - Lateral correction for centering (side ultrasonic)  
+  - Corner detection and lap counting (side ultrasonic)  
+  - Obstacle avoidance (Pi camera)  
+  - Parking detection (rear ultrasonic)  
   - Start/finish detection (HC-SR04)
 
 ---
@@ -58,7 +58,7 @@ The vehicle is equipped with a combination of **distance sensors and camera visi
 ## Wiring and Integration
 
 The wiring is professionally arranged to minimize noise and ensure reliable communication between components:  
-- **I2C Bus:** Shared by the VL53L0X sensors and HuskyLens camera. Each device has a unique address. Pull-up resistors are included as required by the I2C standard.  
+- **I2C Bus:** Shared by the ultrasonic sensors and Pi camera camera. Each device has a unique address. Pull-up resistors are included as required by the I2C standard.  
 - **PWM Lines:** Servo motors are controlled via PCA9685 to offload PWM generation from the Raspberry Pi.  
 - **Digital Lines:** HC-SR04 echo and trigger lines are connected to GPIO pins.  
 - **Motor Driver:** Controlled via two digital GPIO lines for direction and one PWM line for speed.  
@@ -69,9 +69,9 @@ The wiring is professionally arranged to minimize noise and ensure reliable comm
 - L298N Motor Driver  
 - Standard Servo Motor (steering)  
 - PCA9685 16-channel PWM driver  
-- 3 × VL53L0X Time-of-Flight distance sensors (2 sides + 1 rear)  
+- 3 × ultrasonic Time-of-Flight distance sensors (2 sides + 1 rear)  
 - 1 × HC-SR04 ultrasonic sensor  
-- 1 × HuskyLens camera  
+- 1 × Pi camera camera  
 - Lithium-ion battery pack (7.4V–11.1V)  
 - Voltage regulator / UBEC  
 - Wires, connectors, and mounting hardware  
