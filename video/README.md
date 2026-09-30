@@ -6,6 +6,5 @@ Each video showcases the autonomous capabilities of the robot, including navigat
 
 Below are the official YouTube links demonstrating the autonomous performance of the R2M robot in both challenges:
 
-- **Open Challenge:** [https://youtu.be/vKeMzA8lZ60](https://youtu.be/vKeMzA8lZ60)
-- **Obstacle Challenge:** [https://youtu.be/CwsrWB8cLTQ](https://youtu.be/CwsrWB8cLTQ)
+
 
