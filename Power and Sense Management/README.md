@@ -13,11 +13,11 @@ The R2M robot is powered by a **lithium-ion rechargeable battery pack**, providi
   - **Raspberry Pi** via a 5V regulator  
   - **Motor Driver** to supply the DC motor  
   - **Servo Motors** via the PCA9685 PWM driver  
-  - **Sensors** (VL53L0X and HC-SR04) via 5V pins from the Pi or regulated supply  
+  - **Sensors** (Ultrasonic and HC-SR04) via 5V pins from the Pi or regulated supply  
 - **Current Consumption:**  
   - DC Motor: ~1.2–1.5A during acceleration  
   - Servo: ~0.5A during maximum steering correction  
-  - VL53L0X sensors: ~20mA each  
+  - ultrasonic sensors: ~20mA each  
   - HC-SR04: ~15mA during measurement pulses  
   - Raspberry Pi: ~0.7–1A depending on load  
 - Total current remains within the capacity of a 2–3Ah battery pack for sustained operation during the competition.
