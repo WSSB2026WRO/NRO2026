@@ -37,7 +37,7 @@
 ---
 
 ## Distance Sensors
-### VL53L0X Lidar Sensors
+### ultrasonic Lidar Sensors
 - I2C Bus
   - SDA -> Raspberry Pi SDA (GPIO2)
   - SCL -> Raspberry Pi SCL (GPIO3)
