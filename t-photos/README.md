@@ -1,5 +1,5 @@
 ## Team Members
 
-- Rashid –  Project Manager
-- Mohammed – Developer
-- Mansoor – Designer
+- Faysal –  Project Manager
+- Omar – Developer
+- Mohammed – Designer
