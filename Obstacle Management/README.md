@@ -17,7 +17,7 @@ The control strategy relies on integrating **color recognition** and **distance 
    - During normal operation, the forward speed is constant.
 
 2. **Obstacle Detection and Color Recognition:**  
-   - When an obstacle is detected by the **HuskyLens camera**, the system identifies its color.  
+   - When an obstacle is detected by the **Pi camera camera**, the system identifies its color.  
    - If the obstacle is **red**, the robot bypasses it from the **right**.  
    - If the obstacle is **green**, the robot bypasses it from the **left**.
 
@@ -46,7 +46,7 @@ Move Forward (normal)
 ┌────────────┼────────────┐
 │ │
 ▼ ▼
-HuskyLens detects No obstacle
+Pi camera detects No obstacle
 red or green? detected
 │ │
 ▼ ▼
@@ -78,7 +78,7 @@ Stop and park
 ## Pseudo Code
 
 ```python
-Initialize motors, camera (HuskyLens), ultrasonic sensor (HC-SR04)
+Initialize motors, camera (Pi camera), ultrasonic sensor (HC-SR04)
 laps = 0
 corners = 0
 start_distance = read_ultrasonic()
@@ -92,7 +92,7 @@ while laps < 3:
     else:
         set_speed(FORWARD_SPEED)
     
-    color = get_color_from_huskylens()
+    color = get_color_from_Pi camera()
     
     if color == "red":
         turn_right_around_obstacle()
