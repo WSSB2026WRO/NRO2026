@@ -51,7 +51,7 @@ red or green? detected
 │ │
 ▼ ▼
 Execute avoidance Continue centering
-(Red → Right, using VL53L0X sensors
+(Red → Right, using ulktrqsound sensors
 Green → Left) (PID correction)
 │ │
 ▼ ▼
